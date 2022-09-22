@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>1der | 홀로 떠나는 여행</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/single_pages/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/single_pages/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../static/single_pages/assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/single_pages/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../../static/single_pages/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../../static/single_pages/assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\prism/prism.css" rel="stylesheet">
+    <link href="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\swiper\swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'single_pages/assets/css/theme.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/assets/css/user.css' %}" media="screen">
+
+    {% comment %} <link href="../../static/single_pages/assets/css/user.css" rel="stylesheet" /> {% endcomment %}
+  </head>
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="cursor-outer d-none d-md-block"></div>
+      {% include 'blog/navbar.html'%}
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-4 pt-md-0 pb-8 pb-sm-11 mt-lg-n8">
+
+        <div class="container px-md-5">
+          <div class="row">
+            <div class="col-md-9 col-lg-7">
+              <h1 class="fs-4 fs-md-6 fs-xl-7 mb-5 mb-lg-0 position-relative z-index-2">Fotogency <span class="fw-thin text-300">deals with first class </span><span class="text-400">photography  orphan services.</span></h1>
+            </div>
+          </div>
+          <div class="row mt-md-n6">
+            <div class="col-2 d-none d-lg-block mt-auto"><img class="img-fluid" src="../../static/single_pages/assets/img/home/img2.png" alt="" /></div>
+            <div class="col-1 mt-auto d-none d-lg-block"><a class="scroll-indicator text-warning" href="#footer"> <span>SCROLL </span><img src="../../static/single_pages/assets/img/icons/long-arrow.png" alt="" /></a></div>
+            <div class="col-lg-7 position-relative">
+              <div class="position-relative overflow-hidden overflow-md-visible"><img class="img-fluid" src="../../static/single_pages/assets/img/home/img1.png" alt="" />
+                <div class="img-circle p-5 p-md-7 rounded-circle"></div>
+                <div class="img-circle-2 p-5 p-md-7 rounded-circle"></div>
+              </div>
+              <div class="position-absolute bottom-n100 col-11 mt-6 d-none d-md-block">
+                <p class="fs-2 lh-1 text-400">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                <p class="text-300">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+              </div>
+              <div class="position-absolute start-0 bottom-0 d-lg-none"><a class="scroll-indicator text-warning" href="#footer"> <span>SCROLL </span><img src="../../static/single_pages/assets/img/icons/long-arrow.png" alt="" /></a></div>
+            </div>
+            <div class="col-2 d-none d-lg-block mb-auto"><img class="img-fluid" src="../../static/single_pages/assets/img/home/img3.png" alt="" /></div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    {% include 'blog/footer.html' %}
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\popper\popper.min.js"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\bootstrap\bootstrap.min.js"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\anchorjs\anchor.min.js"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\is\is.min.js"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\fontawesome\all.min.js"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\lodash\lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\prism\prism.js"></script>
+    <script src="C:\Users\lynn5\workspace\dj_project\single_pages\vendors\swiper\swiper-bundle.min.js"></script>
+    <script src="../../static/single_pages/assets/js/theme.js"></script>
+
+  </body>
+
+</html>
