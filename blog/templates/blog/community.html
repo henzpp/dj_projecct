@@ -50,7 +50,7 @@
         <div class="container px-md-5">
           <div class="row w-100 g-0 justify-content-between">
             <div class="col-8">
-              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="/index/"><img class="img-fluid" src="../../static/single_pages/assets/img/icons/logo2.png" alt="" /><span class="fw-bolder ms-2">1</span><span class="fw-thin">der</span></a></div>
+              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="/"><img class="img-fluid" src="../../static/single_pages/assets/img/icons/logo2.png" alt="" /><span class="fw-bolder ms-2">1</span><span class="fw-thin">der</span></a></div>
               <div class="mt-4 d-none d-lg-block">
                 <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Community</h1>
                 <h1 class="d-none d-md-block fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">Your Experience</h1>
@@ -67,11 +67,11 @@
               <div class="offcanvas-body px-0">
                 <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
                   <ul class="navbar-nav ms-auto fs-4 ps-6">
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/index/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/forums/">1der Places</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/plantrvl/">Plan Your Travel</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="/community/">Community</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/gallery/">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/places/">1der Places</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/forums/">Plan Your Travel</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="/blog/community/">Community</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/gallery/">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/about/">About</a></li>
                   </ul>
                 </div>
@@ -84,11 +84,11 @@
                 </div>
                 <div class="d-flex gap-3 align-items-start">
                   <ul class="navbar-nav navbar-fotogency ms-auto text-end">
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 " aria-current="page" href="/index/">Home</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/forums/">1der Places</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/plantrvl/">Plan Yout Travel</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="/community/">Community</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/gallery/">Gallery</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 " aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/places/">1der Places</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/forums/">Plan Yout Travel</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="/blog/community/">Community</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/gallery/">Gallery</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/about/">About</a></li>
                   </ul>
                 </div>
@@ -110,7 +110,12 @@
         <div class="container px-md-5">
           <div class="row g-4">
             <div class="col-lg-4 col-md-6 d-flex">
-              <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/blog/assets/img/blogs/img1.png" alt="" />
+              <div class="card border-0 mb-3">
+                <img class="card-img-top" src="../../static/blog/assets/img/blogs/img1.png" alt="" />
+                {% comment %} {% if p.head_image %}
+                  <img class="card-img-top" src="{{ p.head_image.url }}" alt="{{ p }} head image" />
+                {% endif %}
+                  <img class="card-img-top" src="https://picsum.photos/800/425" alt="random_image"> {% endcomment %}
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
                     <p class="text-300 m-0 ps-1">6min read</p>

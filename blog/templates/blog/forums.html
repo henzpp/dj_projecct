@@ -11,7 +11,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>1der Forums | 어디로 떠나볼까요?</title>
+    <title>Plan Your Travel | 어디로 떠나볼까요?</title>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -35,8 +35,13 @@
     <link href="{% static 'blog/vendors/prism/prism.css' %}" rel="stylesheet">
     <link href="{% static 'blog/vendors/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
     <link href="{% static 'blog/assets/css/theme.css' %}" rel="stylesheet" />
-    <link href="{% static 'blog/blog/assets/css/user.css' %}" rel="stylesheet" />
-
+    <link href="{% static 'blog/assets/css/user.css' %}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <style>t{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
   </head>
 
 
@@ -51,9 +56,9 @@
         <div class="container px-md-5">
           <div class="row w-100 g-0 justify-content-between">
             <div class="col-8">
-              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="/index/"><img class="img-fluid" src="../../static/single_pages/assets/img/icons/logo2.png" alt="" /><span class="fw-bolder ms-2">1</span><span class="fw-thin">der</span></a></div>
+              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="/"><img class="img-fluid" src="../../static/single_pages/assets/img/icons/logo2.png" alt="" /><span class="fw-bolder ms-2">1</span><span class="fw-thin">der</span></a></div>
               <div class="mt-4 d-none d-lg-block">
-                <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">1der Forums</h1>
+                <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Plan Your Travel</h1>
                 <h1 class="d-none d-md-block fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">Places To Go</h1>
               </div>
             </div>
@@ -68,11 +73,11 @@
               <div class="offcanvas-body px-0">
                 <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
                   <ul class="navbar-nav ms-auto fs-4 ps-6">
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/index/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="/forums/">1der Places</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/plantrvl/">Plan Your Travel</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/community/">Community</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/gallery/">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/places/">1der Places</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="/blog/forums/">Plan Your Travel</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/community/">Community</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/gallery/">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/about/">About</a></li>
                   </ul>
                 </div>
@@ -81,15 +86,15 @@
             <div class="col-4">
               <div class="d-none d-lg-flex justify-content-end position-relative z-index-1">
                 <div class="position-absolute absolute-centered z-index--1">
-                  <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">1der Forums</h1>
+                  <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">Plan Travel</h1>
                 </div>
                 <div class="d-flex gap-3 align-items-start">
                   <ul class="navbar-nav navbar-fotogency ms-auto text-end">
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/index/">Home</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="/forums/">1der Places</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/plantrvl/">Plan Yout Travel</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/community/">Community</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/gallery/">Gallery</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/places/">1der Places</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="/blog/forums/">Plan Yout Travel</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/community/">Community</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/gallery/">Gallery</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/about/">About</a></li>
                   </ul>
                 </div>
@@ -97,8 +102,8 @@
             </div>
           </div>
           <div class="row g-0 mt-4 d-lg-none">
-            <h1 class="text-uppercase ps-0 fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">1der Forums</h1>
-            <h1 class="fw-bolder text-outlined ps-0 fs-lg-7 fs-sm-6 fs-5 text-white lh-1 mt-sm-n4 mt-n3 position-relative z-index--1">Places to Go</h1>
+            <h1 class="text-uppercase ps-0 fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Plan Your Travel</h1>
+            <h1 class="fw-bolder text-outlined ps-0 fs-lg-7 fs-sm-6 fs-5 text-white lh-1 mt-sm-n4 mt-n3 position-relative z-index--1">Your Next Destination</h1>
           </div>
         </div>
       </nav>
@@ -113,56 +118,61 @@
           <div class="container px-md-5">
             <div class="row g-0">
               <div class="col-lg-12 pb-6 px-0 mb-lg-0">
-                <div class="swiper-container swiper-theme" data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"loopedSlides":3,"slideToClickedSlide":true}'>
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
                       <div class="row align-items-center">
                         <div class="col-xl-7">
                           <div class="position-relative">
                             <div class="position-absolute start-0 bottom-0 ms-3">
-                              <h3 class="text-white">Mogadisu Somalia</h3>
-                              <p class="text-300">Shooting and Advertisement Campaign</p>
-                            </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/img01.png' %}" alt="" />
+                              <h3 class="text-white">1der</h3>
+                              <p class="text-300">Planing Your Next Destination</p>
+                            </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/plan2.jpeg' %}" alt="" />
                           </div>
                         </div>
-                        <div class="col-xl-4 mt-4">
-                          <p class="fs-0">I a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world” and artists belonging to the movement produced woodblock prints and paintings of scenes from history and folktales, sumo wrestlers, landscapes of flora and fauna, and a touch of erotica.</p>
+                        <div class="col-xl-5 mt-4">
+                          <form class="row g-3" action="/blog/forums_result/" method="GET">
+                            <div class="col-12">
+                              <h3 class="text-black"><t>1der (회원)님의 안전한 여행을 계획하세요!</t></h3>
+                              <label for="inputAddress" class="form-label"><t>예산은 얼마인가요?</t></label>
+                              <t><input type="text" aria-label="A" name="A" class="form-control" id="inputAddress" placeholder="💸총 여행경비를 입력해주세요"></t>
+                            </div>
+                            <label for="inlineCheckbox1" class="form-label"><t>여행 스타일을 알려주세요!</t></label>
+                            <div class="col-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" aria-label="B" name="B" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  고요한 힐링 여행
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" aria-label="C" name="C" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  유적지 탐험 관광 여행
+                                </label>
+                              </div>
+                            </div>  
+                            <div class="col-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" aria-label="D" name="D" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  맛으로 즐기는 식도락 여행
+                                </label>
+                              </div>
+                            </div>  
+                            <div class="col-12">
+                              <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="submit">검색!</button>
+                              </div>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="row align-items-center">
-                        <div class="col-xl-7">
-                          <div class="position-relative">
-                            <div class="position-absolute start-0 bottom-0 ms-3">
-                              <h3 class="text-white">Mogadisu Somalia</h3>
-                              <p class="text-300">Shooting and Advertisement Campaign</p>
-                            </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/img02.png' %}" alt="" />
-                          </div>
-                        </div>
-                        <div class="col-xl-4 mt-4">
-                          <p class="fs-0">I a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world” and artists belonging to the movement produced woodblock prints and paintings of scenes from history and folktales, sumo wrestlers, landscapes of flora and fauna, and a touch of erotica.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="row align-items-center">
-                        <div class="col-xl-7">
-                          <div class="position-relative">
-                            <div class="position-absolute start-0 bottom-0 ms-3">
-                              <h3 class="text-white">Mogadisu Somalia</h3>
-                              <p class="text-300">Shooting and Advertisement Campaign</p>
-                            </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/img03.png' %}" alt="" />
-                          </div>
-                        </div>
-                        <div class="col-xl-4 mt-4">
-                          <p class="fs-0">I a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world” and artists belonging to the movement produced woodblock prints and paintings of scenes from history and folktales, sumo wrestlers, landscapes of flora and fauna, and a touch of erotica.</p>
-                        </div>
-                      </div>
+                  
                     </div>
                   </div>
                 </div>
-                <div class="swiper-theme swiper-pagination d-flex mt-4"></div>
+                
               </div>
             </div>
           </div>

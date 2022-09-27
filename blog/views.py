@@ -1,6 +1,8 @@
 from django.views.generic import ListView, DetailView
 from .models import Post
 from django.shortcuts import render
+import re
+
 
 class PostList(ListView):
     model = Post
@@ -29,11 +31,37 @@ def gallery(request):
         'blog/gallery.html'
     )
 
-def plantrvl(request):
+def places(request):
     return render(
         request,
-        'blog/plantrvl.html'
+        'blog/places.html'
     )
+
+
+def forums_result(request):
+    return render(
+        request,
+        'blog/forums_result.html'
+    )
+
+def forums_result2(request):
+    return render(
+        request,
+        'blog/forums_result2.html'
+    )
+
+def forums_result3(request):
+    return render(
+        request,
+        'blog/forums_result3.html'
+    )
+
+def forums_result4(request):
+    return render(
+        request,
+        'blog/forums_result4.html'
+    )
+
 
 
 class Forums(ListView):
@@ -43,20 +71,23 @@ class Forums(ListView):
 
 
 
-# def blog(request):
-#     posts = Post.objects.all()
-#     return render(
-#         request,
-#         'blog/blog.html',
-#     )
 
-# def community(request, pk):
-#     post = Post.objects.get(pk=pk)
 
-#     return render(
-#         request,
-#         'blog/community.html',
-#         {
-#             'post' : post,
-#         }
-#     )
+
+def inputdata(request):
+    return render(request, 'blog/forums.html')
+
+def result(request):
+
+    res = request.GET(['A'])
+    l = int(res)
+
+
+    if 0 < l < 100:
+        return render(request, 'blog/forums_result.html')
+    elif 100 <=  l < 300:
+        return render(request, 'blog/forums_result2.html')
+    elif 300 <= l < 500 :
+        return render(request, 'blog/forums_result3.html')
+    elif 899999 < l <= 1000000 :
+        return render(request, 'blog/forums_result4.html')

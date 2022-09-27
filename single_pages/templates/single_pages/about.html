@@ -35,7 +35,12 @@
     <link href="{% static 'single_pages/vendors/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
     <link href="{% static 'single_pages/assets/css/theme.css' %}" rel="stylesheet" />
     <link href="{% static 'single_pages/assets/css/user.css' %}" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <style>t{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
   </head>
 
 
@@ -50,7 +55,7 @@
         <div class="container px-md-5">
           <div class="row w-100 g-0 justify-content-between">
             <div class="col-8">
-              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="/index/"><img class="img-fluid" src="../../static/single_pages/assets/img/icons/logo2.png" alt="" /><span class="fw-bolder ms-2">1</span><span class="fw-thin">der</span></a></div>
+              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="/"><img class="img-fluid" src="../../static/single_pages/assets/img/icons/logo2.png" alt="" /><span class="fw-bolder ms-2">1</span><span class="fw-thin">der</span></a></div>
               <div class="mt-4 d-none d-lg-block">
                 <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">About</h1>
                 <h1 class="d-none d-md-block fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">About 1der</h1>
@@ -67,11 +72,11 @@
               <div class="offcanvas-body px-0">
                 <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
                   <ul class="navbar-nav ms-auto fs-4 ps-6">
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/index/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/forums/">1der Places</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/plantrvl/">Plan Your Travel</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/community/">Community</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/gallery/">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/places/">1der Places</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/forums/">Plan Your Travel</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/community/">Community</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="/blog/gallery/">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="/about/">About</a></li>
                   </ul>
                 </div>
@@ -84,11 +89,11 @@
                 </div>
                 <div class="d-flex gap-3 align-items-start">
                   <ul class="navbar-nav navbar-fotogency ms-auto text-end">
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/index/">Home</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/forums/">1der Places</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/plantrvl/">Plan Yout Travel</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/community/">Community</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/gallery/">Gallery</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/">Home</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/places/">1der Places</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/forums/">Plan Yout Travel</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/community/">Community</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="/blog/gallery/">Gallery</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="/about/">About</a></li>
                   </ul>
                 </div>
@@ -103,77 +108,74 @@
       </nav>
 
 
-      <!-- ============================================-->
+<!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-2">
+        <section class="py-3">
 
-        <div class="container px-md-5">
-          <div class="row justify-content-center">
-            <div class="col-10">
-              <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                  <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/single_pages/assets/img/team/img1.png" alt="" />
-                    <div class="row g-0 card-body px-0 pt-2">
-                      <div class="col-12 col-xl-8 text-center text-xl-start">
-                        <h4>Michael Lurie</h4>
-                        <p class="text-warning mb-2">CEO</p>
+          <div class="container-fluid px-0">
+            <div class="position-absolute w-100 border-dashed-bottom opacity-25 top-5 z-index-1"></div>
+            <div class="container px-md-5">
+              <div class="row g-0">
+                <div class="col-lg-12 pb-6 px-0 mb-lg-0">
+                  <div class="swiper-container swiper-theme" data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"loopedSlides":3,"slideToClickedSlide":true}'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="row align-items-center">
+                          <div class="col-xl-7">
+                            <div class="position-relative">
+                              <div class="position-absolute start-0 bottom-0 ms-3">
+                                <h3 class="text-black">Web Project</h3>
+                                <t><p class="text-300">웹 사이트 제작</p></t>
+                              </div><img class="portfolio-img img-fluid" src="../../static/single_pages/assets/img/portfolio/mainpage.png"  alt="" />
+                            </div>
+                          </div>
+                          <div class="col-xl-4 mt-4">
+                            <p class="fs-0">I a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world” and artists belonging to the movement produced woodblock prints and paintings of scenes from history and folktales, sumo wrestlers, landscapes of flora and fauna, and a touch of erotica.</p>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-12 col-xl-4 justify-content-center fs-2 d-flex gap-1"><a href="#!"><span class="team-social-icon fab fa-linkedin ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-facebook ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-instagram ml-3"></span></a></div>
+                      <div class="swiper-slide">
+                        <div class="row align-items-center">
+                          <div class="col-xl-7">
+                            <div class="position-relative">
+                              <div class="position-absolute start-0 bottom-0 ms-3">
+                                <h3 class="text-white">Coming Up Next</h3>
+                                <p class="text-300">Shooting and Advertisement Campaign</p>
+                              </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/img02.png' %}" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-xl-4 mt-4">
+                            <p class="fs-0">I a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world” and artists belonging to the movement produced woodblock prints and paintings of scenes from history and folktales, sumo wrestlers, landscapes of flora and fauna, and a touch of erotica.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="row align-items-center">
+                          <div class="col-xl-7">
+                            <div class="position-relative">
+                              <div class="position-absolute start-0 bottom-0 ms-3">
+                                <h3 class="text-white">After</h3>
+                                <p class="text-300">Shooting and Advertisement Campaign</p>
+                              </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/img03.png' %}" alt="" />
+                            </div>
+                          </div>
+                          <div class="col-xl-4 mt-4">
+                            <p class="fs-0">I a genre of Japanese art that became popular in the 17th century through to the 19th century. The word roughly translates as “pictures of the floating world” and artists belonging to the movement produced woodblock prints and paintings of scenes from history and folktales, sumo wrestlers, landscapes of flora and fauna, and a touch of erotica.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                  <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/single_pages/assets/img/team/img2.png" alt="" />
-                    <div class="row g-0 card-body px-0 pt-2">
-                      <div class="col-12 col-xl-8 text-center text-xl-start">
-                        <h4>Jessica Wanda</h4>
-                        <p class="text-warning mb-2">Art Director</p>
-                      </div>
-                      <div class="col-12 col-xl-4 justify-content-center fs-2 d-flex gap-1"><a href="#!"><span class="team-social-icon fab fa-linkedin ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-facebook ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-instagram ml-3"></span></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                  <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/single_pages/assets/img/team/img3.png" alt="" />
-                    <div class="row g-0 card-body px-0 pt-2">
-                      <div class="col-12 col-xl-8 text-center text-xl-start">
-                        <h4>Roland Keith</h4>
-                        <p class="text-warning mb-2">Cinematographer</p>
-                      </div>
-                      <div class="col-12 col-xl-4 justify-content-center fs-2 d-flex gap-1"><a href="#!"><span class="team-social-icon fab fa-linkedin ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-facebook ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-instagram ml-3"></span></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                  <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/single_pages/assets/img/team/img4.png" alt="" />
-                    <div class="row g-0 card-body px-0 pt-2">
-                      <div class="col-12 col-xl-8 text-center text-xl-start">
-                        <h4>Diane Givens</h4>
-                        <p class="text-warning mb-2">Art Director</p>
-                      </div>
-                      <div class="col-12 col-xl-4 justify-content-center fs-2 d-flex gap-1"><a href="#!"><span class="team-social-icon fab fa-linkedin ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-facebook ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-instagram ml-3"></span></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                  <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/single_pages/assets/img/team/img5.png" alt="" />
-                    <div class="row g-0 card-body px-0 pt-2">
-                      <div class="col-12 col-xl-8 text-center text-xl-start">
-                        <h4>John Brown</h4>
-                        <p class="text-warning mb-2">CEO</p>
-                      </div>
-                      <div class="col-12 col-xl-4 justify-content-center fs-2 d-flex gap-1"><a href="#!"><span class="team-social-icon fab fa-linkedin ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-facebook ml-3"></span></a><a href="#!"><span class="team-social-icon fab fa-instagram ml-3"></span></a></div>
-                    </div>
-                  </div>
+                  <div class="swiper-theme swiper-pagination d-flex mt-4"></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
+          <!-- end of .container-->
+  
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
       <!-- ============================================-->
 
 
