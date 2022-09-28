@@ -123,18 +123,16 @@
                           <div class="position-relative">
                             <div class="position-absolute start-0 bottom-0 ms-3">
                               <h3 class="text-white">1der</h3>
-                              <p class="text-300">Planing Your Next Destination</p>
+                              <p class="text-white">Planing Your Next Destination</p>
                             </div><img class="portfolio-img img-fluid" src="{% static 'blog/assets/img/portfolio/plan2.jpeg' %}" alt="" />
                           </div>
                         </div>
                         <div class="col-xl-5 mt-4">
-                          <form class="row g-3" action="/blog/forums_result/" method="GET">
+                          <form class="row g-3" method="GET">
                             <div class="col-12">
                               <h3 class="text-black"><t>1der (회원)님의 안전한 여행을 계획하세요!</t></h3>
-                              <label for="inputAddress" class="form-label"><t>예산은 얼마인가요?</t></label>
-                              <t><input type="text" aria-label="A" name="A" class="form-control" id="inputAddress" placeholder="💸총 여행경비를 입력해주세요"></t>
                             </div>
-                            <label for="inlineCheckbox1" class="form-label"><t>여행 스타일을 알려주세요!</t></label>
+                            <h5 class="form-label"><t>여행 스타일을 알려주세요!</t></h5>
                             <div class="col-4">
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" aria-label="B" name="B" value="" id="flexCheckDefault">
@@ -160,9 +158,22 @@
                               </div>
                             </div>  
                             <div class="col-12">
-                              <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-primary" type="submit">검색!</button>
-                              </div>
+                              <h5 class="form-label"><t>예산은 얼마인가요?</t></h5>
+                              <h5 class="form-label"><t>💸총 여행경비를 클릭하세요!</t></h5>
+                            </div> 
+                            <div class="col-4">
+                              <t><a button type="button" class="btn btn-outline-primary" href="/blog/forums_result/">100만원 이하!</a></t>
+                            </div>
+                            <div class="col-4">
+                              <t><a button type="button" class="btn btn-outline-primary" href="/blog/forums_result2/">~ 300만원 ~</a></t>
+                            </div>
+                            <div class="col-4">
+                              <t><a button type="button" class="btn btn-outline-primary" href="/blog/forums_result3/">~ 500만원 ~</a></t>
+                            </div>
+                            <div class="col-12 text-center">
+                              <t><a button type="button" class="btn btn-primary" href="/blog/forums_result4/"> 😵 5000억..! 😵</a></t>
+                              
+                          
                             </div>
                           </form>
                         </div>

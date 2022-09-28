@@ -84,7 +84,7 @@ def result(request):
 
 
     if 0 < l < 100:
-        return render(request, 'blog/forums_result.html')
+        return render(request, 'blog/forums_result.html',{'seoul': seoul, 'busan':busan})
     elif 100 <=  l < 300:
         return render(request, 'blog/forums_result2.html')
     elif 300 <= l < 500 :

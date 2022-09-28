@@ -35,7 +35,12 @@
     <link href="{% static 'blog/vendors/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
     <link href="{% static 'blog/assets/css/theme.css' %}" rel="stylesheet" />
     <link href="{% static 'blog/assets/css/user.css' %}" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+    <style>t{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
   </head>
 
 
@@ -111,60 +116,63 @@
           <div class="row g-4">
             <div class="col-lg-4 col-md-6 d-flex">
               <div class="card border-0 mb-3">
-                <img class="card-img-top" src="../../static/blog/assets/img/blogs/img1.png" alt="" />
+                <img class="card-img-top" src="../../static/blog/assets/img/blogs/lhong.jpg" alt="" />
                 {% comment %} {% if p.head_image %}
                   <img class="card-img-top" src="{{ p.head_image.url }}" alt="{{ p }} head image" />
                 {% endif %}
                   <img class="card-img-top" src="https://picsum.photos/800/425" alt="random_image"> {% endcomment %}
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
-                    <p class="text-300 m-0 ps-1">6min read</p>
+                    <p class="text-300 m-0 ps-1">1 day ago</p>
                   </div>
                   <div class="bg-warning p-2 text-center opacity-50">
-                    <p class="text-white mb-0">color and light</p>
+                    <p class="text-white mb-0">Hong Kong</p>
                   </div>
                 </div>
                 <div class="mt-4">
-                  <h5 class="mb-3">Simply dummy text of the printing and typesetting.</h5>
-                  <p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">Frederico giuspam</span></p>
-                  <p class="mb-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some</p>
-                  <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="../../static/blog/assets/img/icons/long-arrow.png" alt="" /></button>
+                  <t><h5 class="mb-3">홍콩으로의 딤섬 여행</h5></t>
+                  <t><p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">호두루</span></p></t>
+                  <t><p class="mb-3"> 딤섬을 하루에 세번씩 먹는 사람이 있다? 나야 나!! 이번 홍콩 여행은 마카오에는 안들렸지,, 딩딤은 하루 한번 가도 좋을 만큼 너무너무 맛있음!! 왕샤오롱바오를 꼭 먹어야함😋
+                    홍콩의 메가 세일 기간이며 강우량과 습도가 낮은 무난한 날씨온화한 날씨라 여행하기에 좋고 연말 연시 행사도 많아 볼거리가 많다. 크리스마스와 설날 세일이 있어 쇼핑하기에도 최적인 시즌.
+                  </p></t>
+                  
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 d-flex">
-              <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/blog/assets/img/blogs/img2.png" alt="" />
+              <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/blog/assets/img/blogs/lkyoto.jpg" alt="" />
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
-                    <p class="text-300 m-0 ps-1">6min read</p>
+                    <p class="text-300 m-0 ps-1">a month ago</p>
                   </div>
                   <div class="bg-warning p-2 text-center opacity-50">
-                    <p class="text-white mb-0">color and light</p>
+                    <p class="text-white mb-0">Kyoto</p>
                   </div>
                 </div>
                 <div class="mt-4">
-                  <h5 class="mb-3">Simply dummy text of the printing and typesetting.</h5>
-                  <p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">Frederico giuspam</span></p>
-                  <p class="mb-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some</p>
-                  <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="../../static/blog/assets/img/icons/long-arrow.png" alt="" /></button>
+                  <t><h5 class="mb-3">시간여행 다녀온 후기 - 교토</h5></t>
+                  <t><p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">헨</span></p></t>
+                  <t><p class="mb-3">교토는 옛 도시를 그대로 간직하고 있어 일본의 그 어느 도시를 가더라도 교토만큼 오래되지 않았고 교토만큼 새롭지 못하다. 후시미 이나리 신사, 기요미즈데라 등 셀수 없이 많은 절의 역사를 경험할 수 있다. </p></t>
+                  
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 d-flex">
-              <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/blog/assets/img/blogs/img3.png" alt="" />
+              <div class="card border-0 mb-3"><img class="card-img-top" src="../../static/blog/assets/img/blogs/lmallor.jpg" alt="" />
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
-                    <p class="text-300 m-0 ps-1">6min read</p>
+                    <p class="text-300 m-0 ps-1">6 months ago</p>
                   </div>
                   <div class="bg-warning p-2 text-center opacity-50">
-                    <p class="text-white mb-0">color and light</p>
+                    <p class="text-white mb-0">Mallorcar</p>
                   </div>
                 </div>
                 <div class="mt-4">
-                  <h5 class="mb-3">Simply dummy text of the printing and typesetting.</h5>
-                  <p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">Frederico giuspam</span></p>
-                  <p class="mb-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some</p>
-                  <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="../../static/blog/assets/img/icons/long-arrow.png" alt="" /></button>
+                  <t><h5 class="mb-3">마요르카 물놀이 둥둥</h5></t>
+                  <t><p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">헨</span></p></t>
+                  <t><p class="mb-3">마요르카는 한적한 해안과 보석같은 스팟이 숨어 있는 곳으로 작은 소도시를 찾아보는 즐거움을 느낄 수 있다.
+                    소예르로 향하는 오래된 전차를 타 보고, 쇼팽의 흔적을 찾아 고즈넉한 마을 발데모사를 둘러보자. 햇살이 좋은 날에는 칼로 데스 모로 등의 에메랄드 빛 천연 암반 수영장에서 즐기는 힐링까지!</p></t>
+                  {% comment %} <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="../../static/blog/assets/img/icons/long-arrow.png" alt="" /></button> {% endcomment %}
                 </div>
               </div>
             </div>
